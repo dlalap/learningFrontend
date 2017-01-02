@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>Hello World. This is in the title.</title>
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: helvetica;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    p {
+      font-size: 20px;
+      text-align: right;
+    }
+    #special {
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+      color: blue;
+    }
+
+    .large {
+      font-size: 72px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading1" onclick="changeThisText(this)">This heading is right here. Don't click me.</h1>
+  <h2 id="heading2" onclick="changeThisText(this)">This is also another heading but smaller.</h2>
+  <p id="paragraph" onclick="changeThisText(this)">This is a paragraph.</p>
+  <p id="special" onclick="changeThisText2(this)">This is a special paragraph. Clicking me does nothing. </p>
+  <p id="special" class="center large" onclick="changeThisText2(this)">This paragraph has a center and a large class.</p>
+
+  <script>
+    function changeThisText(id) {
+      id.innerHTML = "You've clicked me! :O";
+    }
+    function changeThisText2(id){
+      id.innerHTML = "Oh no you didn't";
+    }
+  </script>
+</body>
+</html>
