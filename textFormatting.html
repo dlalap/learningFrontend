@@ -5,9 +5,11 @@
     body {
       color: blue;
       text-align: center;
+      font-style: oblique;
     }
     h1 {
       color: green;
+      font-size: 40px
     }
 
     div {
@@ -15,9 +17,20 @@
       width: 30%;
       margin: auto;
       border: 2px solid blue;
+      direction: rtl;
+      word-spacing: -2px;
+      text-shadow: 1px 1px gray;
+      font-size: 1em;
     }
     .testing {
       text-align: inherit;
+      line-height: 0.8;
+      letter-spacing: -0.1px;
+    }
+    .decor {
+      text-decoration: line-through;
+      text-transform: uppercase;
+      letter-spacing: 3px;
     }
   </style>
 </head>
@@ -28,6 +41,6 @@
     <h1 class="testing">Heading 1 in div</h1>
     <p class="testing">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
   </div>
-  <p><a href="http://www.w3schools.com/css/css_text.asp">I finished my hour on Text Decoration.</p>
-</body>
+  <p><a href="http://www.w3schools.com/css/css_text.asp">I finished my hour on Text Decoration.</a></p>
+  <p class="decor">Example of using text decoration.</p>
 </html>
