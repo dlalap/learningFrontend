@@ -4,7 +4,7 @@
   <style>
     div {
       width: 30%;
-      margin: 30% auto 30% auto;
+      margin: 200px auto 200px auto;
     }
     body {
       background-color: black;
@@ -12,19 +12,23 @@
       font-family: helvetica;
       text-align: center;
     }
+    h1.border {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
   <div>
-    <h1 id="hello" onclick="change(this)">Hello world.</h1>
+    <h1 id="hello" class="border" onclick="change(this)">Hello world.</h1>
     <p id="code">#100DaysOfCode</p>
   </div>
   <script>
   function change(id) {
     id.innerHTML = "I'm not very good at staying active :(";
     code.innerHTML = "#100DaysFail";
-    // document.body.style.backgroundColor = #FFFFFF;
-  }
+    }
   </script>
 </body>
 </html>
