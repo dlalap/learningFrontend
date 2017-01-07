@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
+    a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+    a:hover, a:active {
+      background-color: red;
+    }
     div {
       width: 30%;
       margin: 200px auto 200px auto;
@@ -21,13 +33,13 @@
 </head>
 <body>
   <div>
-    <h1 id="hello" class="border" onclick="change(this)">Hello world.</h1>
-    <p id="code">#100DaysOfCode</p>
+    <h1 id="hello" class="border" onclick="change(this)"><i class="glyphicon glyphicon-user"></i> Hello world.</h1>
+    <p id="code"><a href="http://www.twitter.com/hashtag/100daysofcode">#100DaysOfCode</a></p>
   </div>
   <script>
   function change(id) {
     id.innerHTML = "I'm not very good at staying active :(";
-    code.innerHTML = "#100DaysFail";
+    code.innerHTML = "<a href=\"http://www.google.com\">#100DaysFail</a>";
     }
   </script>
 </body>
