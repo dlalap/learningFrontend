@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body{
+    font-family: helvetica;
+    font-weight: lighter;
+  }
+  table, th, td {
+    /*border: 1px solid lightgray;*/
+    border-collapse: collapse;
+  }
+  /*table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }*/
+  table {
+    width: 100%;
+    /*border: 1px solid black;*/
+  }
+  th {
+    height: 50px;
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  #firstColumn {
+    width: 20%;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #880000;
+    color: #ffffff;
+  }
+  th.heading {
+    background-color: #555555;
+    color: white;
+  }
+
+div {
+  /*border: 1px solid #550000;
+  width: 200px;
+  padding: 10px;
+  margin: 50px auto 50px auto;*/
+}
+
+a:link, a:visited {
+  background-color: #880000;
+  text-decoration: none;
+  padding: 20px 50px;
+  color: white;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #887777;
+}
+
+p.progressLink {
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th id="firstColumn" class="heading">Physics Topics</th>
+      <th class="heading">Applications</th>
+    </tr>
+    <tr>
+      <td>Thermodynamics</td>
+      <td>Thermal Models, Heat Models, Mechanical Engineering</td>
+    </tr>
+    <tr>
+      <td>Quantum Physics</td>
+      <td>Semiconductors, Quantum Electrodynamics, Chemistry</td>
+    </tr>
+    <tr>
+      <td>Electromagnetism</td>
+      <td>Electrical Engineering, Optics, Power Engineering</td>
+    </tr>
+  </table>
+<div>
+  <p class="progressLink"><a class="lastLink" href="http://www.w3schools.com/css/css_display_visibility.asp">Total progress</a></p>
+</div>
+
+</body>
+</html>
