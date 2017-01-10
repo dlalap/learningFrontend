@@ -8,14 +8,26 @@
       border: 3px solid green;
     }
     div.ex2 {
+      position: absolute;
+      left: 40%;
+      top: 3px;
       max-width: 500px;
       margin: auto;
       border: 3px solid green;
+      z-index: -1;
+    }
+    div.fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width:300px;
+      border: 1px solid black;
     }
   </style>
 </head>
 <body>
   <div class="ex1">Oh shit</div>
   <div class="ex2">Waddup</div>
+  <div class="fixed">Messenger: 0 online</div>
 </body>
 </html>
