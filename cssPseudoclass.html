@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: helvetica;
+      font-weight: lighter;
+    }
+    a {
+      text-decoration: none;
+    }
+    a.null:link, a.null:visited {
+      color: #550000;
+      background-color: #AAAAAA;
+      padding: 10px;
+      text-align: center;
+    }
+    a.null:hover, a.null:active {
+      color: #880000;
+      background-color: #DDDDDD;
+      padding: 10px;
+      text-align: center;
+    }
+    div {
+      padding: 10px;
+      width: 50%;
+    }
+    div.hovertest:hover {
+      background-color: blue;
+    }
+
+    p {
+      display: none;
+      background-color: yellow;
+      padding: 20px;
+    }
+    p:first-child {
+      color: red;
+    }
+    p i:first-child {
+      color: green;
+    }
+    div:hover p {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <a class="null" href="null">Testing a link</a>
+  <div class="hovertest">Testing a div hover?</div>
+  <div>
+    Hover over me to show p element.
+    <p><a href="http://www.google.com">Hallo!</a></p>
+    <p>Second <i>child</i> with multiple <i>'i'</i> children.</p>
+    <p>Third <i>child</i> with multiple <i>'i'</i> children.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+  p.letter::first-letter {
+    color: #FF0000;
+    font-size: xx-large;
+  }
+  img {
+    float: left;
+    opacity: 0.5;
+    width: 7%;
+    margin: 10px;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  h1::after {
+    content: ' Testing.';
+  }
+  h1::selection {
+    color: red;
+    background: yellow;
+  }
+  </style>
+</head>
+<body>
+  <p>Some text. <img src="hidethepain.png"></p>
+  <p>This should be another line. Maybe? Pariatur magna fugiat qui sint minim ullamco sit eu sint incididunt ea ipsum enim non. Occaecat laborum amet duis dolor eu Lorem ea elit et enim. Incididunt occaecat minim elit Lorem labore nostrud nulla consectetur irure duis sint aute elit. Eiusmod duis incididunt labore nostrud cillum elit consequat. Est dolor voluptate culpa magna cillum consectetur deserunt voluptate deserunt in irure irure irure adipisicing. Occaecat reprehenderit dolor cillum deserunt commodo adipisicing in consequat.</p>
+  <p class="letter">The</p>
+  <h1>Hide the pain, Harold.</h1>
+</body>
+</html>
