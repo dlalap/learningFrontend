@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+    div.menu {
+      position: relative;
+      width: 50%;
+      border: 1px solid blue;
+      text-align: center;
+    }
+    ul.menu {
+      position: absolute;
+      font-family: sans-serif;
+      font-weight: lighter;
+      list-style-type: none;
+      margin: 0 auto;
+      /*margin-right: 0px;*/
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+    li:last-child {
+      border-right: none;
+    }
+    li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 14px 16px;
+    }
+    li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div class=menu>
+    <ul class="menu">
+      <li><a href="default.asp">Home</a></li>
+      <li><a href="rush.asp">Rush and Recruitment</a></li>
+      <li><a href="about.asp">About</a></li>
+      <li><a href="faqs.asp">FAQs</a></li>
+      <li><a href="actives.asp">Current Active Members</a></li>
+      <li><a href="contact.asp">Contact Us</a></li>
+    </ul>
+  </div>
+<br></br><br></br>
+  <div class="menu">
+    Test
+  </div>
+</body>
+</html>
