@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    counter-reset: blah;
+
+  }
+  h2 {
+    counter-reset: lmao;
+    font-family: adobe-caslon-pro, serif;
+    font-style: normal;
+  }
+  h2::before {
+    counter-increment: blah;
+    content: "Section " counter(blah) ": ";
+  }
+
+  h3::before {
+    counter-increment: lmao;
+    content: "Lmao " counter(lmao) ": ";
+  }
+
+  ol {
+    counter-reset: section;
+    list-style-type: none;
+  }
+
+  li::before {
+    counter-increment: section;
+    content: counters(section,".") ". ";
+  }
+  </style>
+</head>
+<body>
+  <h2>Automatic numbering with counters</h2>
+  <h2>Another h2 heading</h2>
+  <h3>Ayy lmao</h3>
+  <h2>And another one</h2>
+  <h3>Slow down</h3>
+  <h3>Lookin' good</h3>
+  <h3>My man</h3>
+  <ol>
+    <li>First on the list</li>
+    <li>Second on the list</li>
+    <li>Third on the list</li>
+  </ol>
+</body>
+</html>

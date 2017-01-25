@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: #AAA;
+  }
+
+  a[target] {
+    background-color: yellow;
+  }
+
+  a[target="_top"] {
+    background-color: lightgreen;
+  }
+  [title~="google"] {
+    border: 5px solid blue;
+  }
+
+  [class|="top"] {
+    background: red;
+  }
+
+  [class^="top"] {
+    background: violet;
+  }
+
+  [class$="top"] {
+    background: lightgreen;
+  }
+
+  [class*="te"] {
+    background: black;
+    color: white;
+  }
+
+  </style>
+</head>
+<body>
+  <a href="www.google.com" title="google">Google</a>
+  <a href="http://www.yahoo.com" target="_top">Yahoo</a>
+  <a href="http://www.twitter.com" target="_bottom">Twitter</a>
+  <p class="top-Man">Top Man</p>
+  <p class="top-Dog">Top Dog</p>
+  <p class="topdoihrg4">Top ???</p>
+  <p class="ep4itje4ttop">??? Top</p>
+  <p class="50y9jrthfeteew49tjst;g">??? te ???</p>
+</body>
+</html>
